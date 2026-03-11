@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-html-css-arrendodado-que-desbuga1.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação </h2>
+    <p>O comando <code>document.getElementById('teste')</code>(formatação de código) é do JavaScript.</p>
+    <p>mas para uma formatação mais extensa é preciso de uma pré-formatação para garantir maior "Lindeza".</p>
+    
+    <pre>
+        <code>
+            #include &lt;cs50&gt;
+            #include &lt;stdio&gt;
+            
+            int main(void)
+            {
+                int num = get_int('Digite um número');
+                if (num % 2 == 0)
+                {
+                    printf("O número %i é par.", num);
+                }
+                else
+                {
+                    printf("O número %i é ímpar.");
+                }
+                printf("Fim do Programa.");
+            }
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Funcionam colocando as tags "q"(recomendado usar apenas em citações para adicionar semântica, mas em palavras estranhas os uso pode se manter inalterado)</p>
+    <p>Exemplo: <q> cite="Uma citação"O computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Para citações mais compostas é recomendado usar o "blockquote"</p>
+    <p>Segundo CARVALHO, 2013, p. 48-49</p>
+    <blockquote cite="https://ifpr.edu.br/jacarezinho/wp-content/uploads/sites/16/2022/09/Elaboracao-de-Citacoes.pdf">
+        As características do consumidor que podem influenciar o feito
+        país de origem são: educação e conservadorismo, idade e
+        sexo, familiaridade com a marca, fluência na língua do
+        país, quantidade de pistas sobre o produto, necessidade
+        de cognição, motivação, grau de envolvimento e cultura
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Tag "abbr" para abreviações</p>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <h2>Inversão de texto</h2>
+    <p><bdo dir="rtl">Por hoje é só de HTML e CSS!</bdo></p>
+</body>
+</html>

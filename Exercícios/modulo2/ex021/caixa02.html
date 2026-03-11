@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-html-css-arrendodado-que-desbuga1.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Revalia&family=Stalinist+One&family=Unlock&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+        body
+        {
+            background-color: rgb(41, 32, 32);
+            font-family: Arial, Helvetica, sans-serif ;
+            color: white;
+            margin: 0px 0 10px 0;
+        }
+        header
+        {
+            padding: 10px;
+            background-image: linear-gradient(to bottom, #690400, #FA0800, #690400);
+            box-shadow: 0px 10px 10px #690400;
+        }
+        a
+        {
+            color: #CF0700;
+            font-size: 2em;
+            -webkit-text-stroke-color: #FA0800;
+            -webkit-text-stroke-width: 1px;
+            margin: 0 200px 0 200px;
+            text-decoration: none;
+        }
+        a:active
+        {
+            color: rgb(255, 94, 0);
+        }
+        a:visited
+        {
+            color: #690400;
+        }
+        h1#título
+        {
+            font-family: Unlock;
+            text-align: center;
+            color: #690400;
+            font-size: 5em;
+            width: 10000;
+        }
+        section#introdução
+        {
+            margin: 50px 0 100px 0
+        }
+
+        blockquote
+        {
+            position:relative;
+            margin-bottom: 40px;
+            margin-top: 0;
+            border: 40px solid #8B0500;
+            background-color: #AD0600;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0 0 50px #AD0600;
+            border-radius: 20px;
+            
+        }
+        h1.center
+        {
+            text-align:center;
+        }
+        section#artigos
+        {
+            margin: 50px 20px 30px 20px;
+            padding: 10px;
+            background-color: #690400;
+            border: 10px solid #AD0600;
+            border-radius: 20px;   
+        }
+        blockquote::before
+        {
+            content: "Por: Machado de Assis";
+            position:absolute;
+            background-color: #8B0500;
+            color:#690400;
+            font-weight: bolder;
+            padding: 0 5px;
+            bottom: -30px;
+            left:50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 50px #8B0500;
+            border-radius: 5px;
+        }
+        div#citação
+        {
+            display:flex;
+            gap: 0;
+        }
+        a:hover 
+        {
+            text-decoration: underline;
+        }
+        p
+        {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="título">Meu site</h1>
+        <nav>
+            <a href="a">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="introdução">
+            <hr>
+            <h1 class="center">Resumo</h1>
+            <p style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et laudantium tenetur quisquam architecto? Vitae quos dignissimos obcaecati blanditiis delectus! Quod et neque molestiae ullam quia dolore hic iusto. Nesciunt.</p>
+        </section>
+        <hr>
+        <section id="desenvolvimento">
+            <h1 class="center">Citação do dia</h1>
+            <div id="citação"></div>
+            <blockquote>
+                "Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Reprehenderit minima ipsa unde laboriosam commodi facere voluptas laudantium debitis in corrupti reiciendis deserunt, est aspernatur nihil blanditiis deleniti repellendus! Adipisci, mollitia."
+            </blockquote>
+             <aside>
+               <!-- coisas a se falar do elemento acima -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non rerum explicabo illo aliquid voluptatibus, adipisci dolorum dolorem, quia reiciendis velit eligendi delectus porro culpa neque quas numquam dolore excepturi libero.</p>
+            </aside>
+        </section>
+        <hr>
+        <section id="artigos"> 
+            <article>                
+                <h1 class="center" style="color:#e20800">NOTÍCIA URGENTE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis doloremque cumque ratione tempore praesentium, corporis error quae. Corporis fugit vitae ipsam necessitatibus quae, expedita quasi rem soluta nihil dignissimos voluptas!</p>
+            </article>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p style="font-size: 1.5em;">Desenvolvido por: <span style="font-family: Sriracha;">Lauan</span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-html-css-arrendodado-que-desbuga1.ico" type="image/x-icon">
+    <style>
+        /* 
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a
+        {
+            color: rgb(1, 162, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited
+        {
+            color:rgb(255, 0, 0);
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+        a:active
+        {
+            color: rgb(3, 85, 133);
+        }
+        /* abaixo há um exemplo de como usar algo como "and" apenas os concatenando dessa forma */
+        a:active:visited
+        {
+            color:rgb(150, 1, 1);
+        }
+        /* também há o "ou" nele são separados por vírgula */
+        a:hover::before
+        {
+            content: "🡆 ";
+            text-decoration: none;
+        }
+        a:hover::after
+        {
+            content: " 🡄";
+            text-decoration: none;
+        }
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" >Repositório do Github (Guanabara)</a></li>
+        <li><a href="https://www.youtube.com/@cursoemvideo" target="_blank" >Canal do Youtube (Guanabara)</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do  curso em vídeo</a></li>
+        <li><a href="https://chatgpt.com/" target="_blank">Chat GPT</a></li>
+    </ul>
+</body>
+</html>

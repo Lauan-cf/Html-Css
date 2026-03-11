@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias no HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>No Html, você pode fazer imagens se adaptam ao tamnho de sua tela, como essa:</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem fléxivel">
+    </picture>
+    <h1>Reproduzindo aúdios</h1>
+    <p>Você pode usar aúdios em Html5 de duas formas:</p>
+    <ul>
+        <li>A mais simples(porém mais limitada):</li>
+        <audio src="midia/guanacast.mp3" controls></audio>
+        <li>E a mais complicada(porém mais completa):</li>
+        <audio preload="metadata" controls autoplay loop>
+            <source src="midia/musica-calma.mp3" type="audio/mpeg">
+        </audio>
+    </ul>
+    
+</body>
+</html>

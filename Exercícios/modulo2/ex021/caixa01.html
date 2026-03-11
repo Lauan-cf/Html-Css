@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-html-css-arrendodado-que-desbuga1.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style> 
+        h1
+        {
+            display: flex;
+            font-size: 3em;
+            margin: auto;
+            background-color: #8fe3ff;
+            height: 300px;
+            width: 300px;
+            border-width: 50px;
+            /* nas border-style também há como ser dashed(pontilhado com linhas), dotted (pontilhado com círculos), double(linha dupla), groove(efeito 3D) */
+            border-style: solid;
+            border-image:radial-gradient(circle, rgb(143, 227, 255), white);
+
+            /* shorthand da border: "border: 50px solid radial-gradient(circle, rgb(143, 227, 255), white);"*/
+
+            text-align: center;
+            align-items: center;
+            /* shorthand da margin: "margin: 10px 10px 10px 10px;" (segue as mesmas regras que o padding)*/
+            /* também dá pra botar algumas como auto para centralizar e outras da forma que preferir (margin: 10px auto 10px auto)*/
+            margin-bottom: 50px;
+            outline-width: 10px;
+            outline-color:rgb(0, 132, 255);
+            outline-style: double;
+
+            /* shorthand da outline: "outline: 10px double rgb(0, 132, 255);"*/
+            box-shadow: 0 0 30px rgb(0, 132, 255);
+        }
+        p
+        {
+            text-align: center  ;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 0 40px;
+            /* shorthand do padding: "padding: 10px 10px 10px 10px;" (sentido horário começando do topo)*/
+            /* se colocar um valor só (exemplo: padding:10px) vai contar como todos os valores, e se colocar só 2 (exemplo:padding: 10px 20px;) vai ficar padding-left e right como 20px e o top e bottom como 10px*/
+            gap: 500px;
+        }
+        .box-level, .inline-level
+        {
+            font-size: 1.5em;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>↑ Como pode ver no exemplo acima h1 é um box-level, assim tendo sua linha própria independente do tamanho ↑</p>
+    <p>Parágrafos também são exemplos de caixas box-level, mas os <a href="#">links são exemplos de caixas inline-level</a></p>
+    <div class="container">
+        <div class="box-level">
+            <ul>
+                <h2>Box-level:</h2>
+                <li>h1 - h6</li>
+                <li>p</li>
+                <li>video</li>
+                <li>li</li>
+            </ul>
+        </div>
+        <div class="inline-level">
+            <ul>
+                <h2>Inline-level:</h2>
+                <li>strong</li>
+                <li>em</li>
+                <li>sup - sub</li>
+                <li>a</li>
+            </ul>
+        </div>
+    
+    </div>
+    
+</body>
+</html>

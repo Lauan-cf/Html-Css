@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-html-css-arrendodado-que-desbuga1.ico" type="image/x-icon">
+    <title>Borda Personalizada</title>
+    <style>
+        h1
+        {
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image: url('borda.png');
+            border-image-slice: 27;
+            /* Também pode ser usado o stretch que apenas alonga a imagem */
+            border-image-repeat: repeat;
+            /* Shorthand: "border-image: url('borda.png') 27 repeat;" */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+</body>
+</html>

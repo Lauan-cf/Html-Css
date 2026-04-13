@@ -15,15 +15,16 @@
         }
         body
         {
-            background-color: white;
+            background-color: black;
+            background: black url(imagens/background001.jpg) center center no-repeat fixed;
+            background-size: cover;
+            background-image: url(imagens/background001.jpg);
         }
         #background1
         {
             height: 1200px;
             max-width: 3000px;
-            background: black url(imagens/background001.jpg) center center no-repeat fixed;
-            background-size: cover;
-            background-image: url(imagens/background001.jpg);
+           
         }
         header
         {
@@ -65,13 +66,20 @@
         {
             text-decoration: underline;
         }
-        article p
+        article.dentro p
         {
             font-size: clamp(1.5rem, 4vw, 2.7rem);
             color: black;
             line-height: 2em;
             font-family: Sriracha;
 
+        }
+        article.fora p
+        {
+            font-size: clamp(1.5rem, 4vw, 2.7rem);
+            color: white;
+            line-height: 2em;
+            font-family: Sriracha;
         }
         article.dentro
         {
@@ -84,9 +92,13 @@
         }
         article.fora
         {
-            max-width:500px;
-            max-height: 700px;
-            color: rgba(0, 0, 0, 0.301);
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            max-width:600px;
+            height: auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.301);
 
         }
     </style>
@@ -110,13 +122,13 @@
         </article>
         <article class="fora">
             <p>
-                Não é mais como era antes
-                É tudo abreviado
-                "Você" só tem duas letras
-                O "O" e o "E" foi riscado
-                Para declarar o amor
-                Basta botar uma flor
-                E um coração desenhado.
+                Não é mais como era antes <br>
+                É tudo abreviado <br>
+                "Você" só tem duas letras <br>
+                O "O" e o "E" foi riscado <br>
+                Para declarar o amor <br>
+                Basta botar uma flor <br>
+                E um coração desenhado. <br>
             </p>
         </article>
     </div>

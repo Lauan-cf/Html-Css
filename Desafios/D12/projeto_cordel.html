@@ -102,8 +102,8 @@
         {
             margin-top: 100px;
             margin-bottom: 100px;
-            margin-left: 50px;
-            width: 550px;
+            margin-left: clamp(10px, 5vw, 50px);
+            max-width: 550px;
             max-height: auto;
             padding: 30px 10px;
             background-color: rgba(0, 0, 0, 0.5);
@@ -112,7 +112,8 @@
         footer
         {
             background-color: black;
-            max-height: 50px;
+            margin-top: 20px;
+            max-height: 100px;
             max-width: 1905px;
             text-align: center;
             position: relative;
@@ -187,7 +188,7 @@
                 Pra entender como fica <br>
                 Decifre esse rabisco. 
             </p>
-            <article class="fora" style="margin-top: 200px; margin-bottom: 300px;">
+            <article class="fora" style="margin-bottom: clamp(200px, 10vw, 300px); margin-top: clamp(300px, 10vw, 600px);">
                 <p>
                     Tenho saudade das cartas <br>
                     Escritas com a própria mão <br>

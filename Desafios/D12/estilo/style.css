@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+ @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+        *
+        {
+            margin:0;
+            padding: 0;
+
+        }
+        body
+        {
+            background-color: black;
+            
+        }
+        #background1
+        {
+            height: 2200px;
+            max-width: 3000px;
+            background: black url(../imagens/background001.jpg) center center no-repeat fixed;
+            background-size: cover;
+            background-image: url(../imagens/background001.jpg);
+        }
+        #background2
+        {
+            height: 2400px;
+            max-width: 3000px;
+            background: black url(../imagens/background002.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        header
+        {
+            background-color: black;
+            height: 400px;  
+            max-width: 1905px;
+            position: relative;
+        }
+        header h1
+        {
+            position: absolute;
+            font-family: Passion One;
+            font-size: clamp(4em, 7vw, 6em);
+            min-width: 430px;
+            left:50%;
+            top: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+
+        }
+        header p
+        {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.5em;
+            left:50%;
+            top: 65%;
+            transform: translate(-50%, -50%);
+            
+        }
+        header a
+        {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        header a:hover
+        {
+            text-decoration: underline;
+        }
+        article.dentro p
+        {
+            font-size: clamp(1.5rem, 4vw, 2.7rem);
+            color: black;
+            line-height: 2em;
+            font-family: Sriracha;
+
+        }
+        article.fora p
+        {
+            font-size: clamp(1.5rem, 4vw, 2.7rem);
+            color: white;
+            line-height: 2em;
+            font-family: Sriracha;
+        }
+        article.dentro
+        {
+            max-width: 1905px;
+            max-height: 700px;
+            background-color: white;
+            padding: 30px;
+            padding-top: 120px;
+            padding-bottom: 200px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        }
+        article.fora
+        {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: clamp(10px, 5vw, 50px);
+            max-width: 550px;
+            max-height: auto;
+            padding: 30px 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+        }
+        footer
+        {
+            background-color: black;
+            margin-top: 20px;
+            max-height: 100px;
+            max-width: 1905px;
+            text-align: center;
+            position: relative;
+        }
+        footer a
+        {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover
+        {
+            text-decoration: underline;
+        }
+        footer p
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.5em;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }

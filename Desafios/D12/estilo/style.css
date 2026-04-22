@@ -19,21 +19,6 @@
             background-color: black;
             min-height: 100vh;
         }
-        #background1
-        {
-            height: 2200px;
-            max-width: 3000px;
-            background: black url(../imagens/background001.jpg) center center no-repeat fixed;
-            background-size: cover;
-            background-image: url(../imagens/background001.jpg);
-        }
-        #background2
-        {
-            height: 2400px;
-            max-width: 3000px;
-            background: black url(../imagens/background002.jpg) center center no-repeat fixed;
-            background-size: cover;
-        }
         header
         {
             background-color: black;
@@ -90,6 +75,7 @@
             color: black;
             line-height: 2em;
             font-family: var(--fonte3);
+            padding-bottom: 2em;
 
         }
         article.fora p
@@ -102,7 +88,7 @@
         article.dentro
         {
             max-width: 1905px;
-            max-height: 700px;
+            max-height: fit-content;
             background-color: white;
             padding-right: 30px;
             padding-left: 30px;
@@ -112,13 +98,22 @@
         {
             display: inline-block;
             margin-top: 100px;
-            margin-bottom: 100px;
             margin-left: clamp(10px, 5vw, 50px);
             max-width: 550px;
             max-height: auto;
             padding: 5px;
             background-color: rgba(0, 0, 0, 0.5);
 
+        }
+        article #background1
+        {
+            background: black url(../imagens/background001.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        article #background2
+        {
+            background: black url(../imagens/background002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         footer
         {

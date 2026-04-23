@@ -67,50 +67,44 @@
         {
             padding-top: 10vh;
             padding-bottom: 10vh;
+            line-height: 2em;
+            font-family: var(--fonte3);
+            font-size: clamp(1.5rem, 4vw, 2.7rem);
+            padding-left: 30px;
 
+        }
+        article p
+        {
+            padding-bottom: 2em;
         }
         article.dentro p
         {
-            font-size: clamp(1.5rem, 4vw, 2.7rem);
             color: black;
-            line-height: 2em;
-            font-family: var(--fonte3);
-            padding-bottom: 2em;
-
-        }
-        article.fora p
-        {
-            font-size: clamp(1.5rem, 4vw, 2.7rem);
-            color: white;
-            line-height: 2em;
-            font-family: var(--fonte3);
         }
         article.dentro
         {
-            max-width: 1905px;
-            max-height: fit-content;
             background-color: white;
             padding-right: 30px;
-            padding-left: 30px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
         }
         article.fora
         {
-            display: inline-block;
-            margin-top: 100px;
-            margin-left: clamp(10px, 5vw, 50px);
-            max-width: 550px;
-            max-height: auto;
-            padding: 5px;
-            background-color: rgba(0, 0, 0, 0.5);
-
+            background-color: gray;
+            color: white;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
         }
-        article #background1
+        article.fora p
         {
-            background: black url(../imagens/background001.jpg) center center no-repeat fixed;
+            display: inline-block; 
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.514);
+            text-shadow: 2px 1px 0px black;
+        }
+        article#background1
+        {
+            background: black url(../imagens/background001.jpg) right center no-repeat fixed;
             background-size: cover;
         }
-        article #background2
+        article#background2
         {
             background: black url(../imagens/background002.jpg) center center no-repeat fixed;
             background-size: cover;

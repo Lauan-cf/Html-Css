@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            height: 400px;
+            text-align: center; /*Alinhamento horizontal do conteúdo da célula*/
+            vertical-align: middle; /*Alinhamento vertical do conteúdo da célula*/
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .numero {
+            text-align: right;
+        }
+        th {
+            border: 1px solid white;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!-- Hierarquia de Tabelas(simples):
+        table = tabela
+        tr = table row = linha da tabela
+            th = table header = cabeçalho da tabela
+            td = table data = célula da tabela
+    -->
+    <table>
+        <th> A </th>
+        <th> B </th>
+        <th> C </th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>   
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2 <!-- é opcional o fechamento das tags td e tr e th  -->
+        </tr>
+        <tr >
+            <td>A3</td>
+            <td>B3
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td class="numero">455</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>

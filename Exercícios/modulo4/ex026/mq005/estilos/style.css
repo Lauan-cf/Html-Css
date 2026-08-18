@@ -23,12 +23,27 @@ header h1
     text-align: center;
 }
 
+span#burguer
+{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding:10px;
+    cursor: pointer;
+}
 
+span#burguer:hover
+{
+    background-color: white;
+    color: black;
+}
 
 menu ul
 {
     list-style-type: none;
 }
+
 
 menu a
 {
@@ -38,7 +53,12 @@ menu a
     color: rgb(49, 49, 49);
     background-color: rgb(97, 97, 97);
     text-align: center;
-    border-top: 2px solid rgb(53, 53, 53);
+    border-top: 2px solid rgb(48, 48, 48);
+}
+
+#itens
+{
+    display: none;
 }
 
 menu a:hover

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container
+        {
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+        }
+
+        div.item
+        {
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Valor grande que ocupa boa parte do conteiner</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">Valor grandinho</div>
+        <div class="item">Valor grande ocupando espaço</div>
+        <div class="item">F</div>
+        <div class="item">Valorzão que ocupa bastante espaço</div>
+    </div>
+</body>
+</html>

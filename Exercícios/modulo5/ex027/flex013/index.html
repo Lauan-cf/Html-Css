@@ -14,13 +14,24 @@
             display: flex;
             background-color: #515152;
             padding: 20px;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-flow: row wrap;
+            gap: 850px;
         }
 
         h1
         {
             font-size: 4rem;
+            color: white;
+            text-shadow: 1px 2px 5px black;
+        }
+
+        #navbar
+        {
+            display: flex;
+            height: 100px;
+            gap: 10px;
+            align-items: center;
         }
 
         nav
@@ -28,8 +39,12 @@
             background-color: black;
             color: white;
             flex: none;
-            border-radius: 20px;
-            gap: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            flex-basis: 100px;
+            height: 40px;
+            font-size: 1.5rem;
+            text-align: center;
         }
 
 
@@ -38,13 +53,15 @@
 </head>
 <body>
     <header>
-        <h1>Meu site</h1>
-        <nav>Opção 1</nav>
-        <nav>Opção 2</nav>
-        <nav>Opção 3</nav>
-        <nav>Opção 4</nav>
-        <nav>Opção 5</nav>
-        <nav>Opção 6</nav>
+        <h1>Meu Site</h1>
+        <div id="navbar">
+            <nav>Opção 1</nav>
+            <nav>Opção 2</nav>
+            <nav>Opção 3</nav>
+            <nav>Opção 4</nav>
+            <nav>Opção 5</nav>
+            <nav>Opção 6</nav>
+        </div>
     </header>
 </body>
 </html>

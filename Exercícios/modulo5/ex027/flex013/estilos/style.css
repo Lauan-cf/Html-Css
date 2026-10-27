@@ -36,7 +36,7 @@
             width: 87%;
         }
 
-        nav
+        a
         {
             background-color: black;
             color: white;
@@ -46,9 +46,10 @@
             flex-basis: 100px;
             font-size: 1.5rem;
             text-align: center;
+            text-decoration: none;
         }
 
-        nav:hover
+        a:hover
         {
             color: black;
             background-color: white;

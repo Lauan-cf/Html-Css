@@ -7,14 +7,25 @@
         justify-content: center;
     }
 
+    h1
+    {
+        text-align: center;
+    }
+
     #navbar
     {
         flex-flow: column nowrap;
+
     }
 
     nav
     {
         flex: auto;
         width: 100%;
+    }
+
+    a
+    {
+        font-size: 4rem;
     }
 }

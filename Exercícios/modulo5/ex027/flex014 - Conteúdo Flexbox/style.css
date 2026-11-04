@@ -7,20 +7,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header, footer
+{
+    padding: 50px;
+}
+
 main
 {
     display: flex;
-    background-color: rgba(167, 167, 167, 0.589);
-    padding: 10px;
+    background-color: rgba(167, 167, 167, 0.397);
+    padding: 50px;
     margin: 30px 0;
     flex-flow: column wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 div#reverse
 {
     display: flex;
     justify-content: space-between;
-    flex-flow: row-reverse wrap;
+    flex-flow: row wrap-reverse;
 }
 
 div#normal
@@ -28,6 +35,7 @@ div#normal
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin-top: 30px;
 }
 
 img
@@ -38,5 +46,11 @@ img
 
 p
 {
-    width: 1000px;
+    width: 60vw;
+    font-size: clamp(12px, 0.8vw, 0.8vw);
+}
+
+.separado
+{
+    width: 60vw;
 }

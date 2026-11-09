@@ -23,7 +23,7 @@ header, .normal
     background-color: rgba(167, 167, 167, 0.397);
     padding: 50px;
     margin: 30px 0;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     width: 100%;
     box-sizing: border-box;
 }
@@ -52,11 +52,41 @@ img
 p
 {
     margin: 10px 0;
-    width: 60vw;
+    text-align: justify;    
+}
+
+p
+{
     font-size: clamp(12px, 0.8vw, 0.8vw);
 }
 
 .separado
 {
-    width: 60vw;
+    flex: 1 1 60vw;
 }
+
+.midia
+{
+    flex: 1 0 30vw;
+}
+
+.midia img
+{
+    display: block;
+    margin: auto;
+}
+
+.midia iframe
+{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+h1, h2
+{
+    line-height: 1.2em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
